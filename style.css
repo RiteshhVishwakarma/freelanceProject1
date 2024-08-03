@@ -14,6 +14,7 @@ html, body{
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
 }
 
 nav h1{
@@ -46,6 +47,49 @@ nav a{
     color: rgb(13, 13, 13);
 }
 
+/* Nev Ends */
+
+
+/* Main Menu Start */
+
+#box1{
+    height: 30rem;
+    /* background-color: rgb(79, 71, 87); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+#box1 span{
+    color: red;
+}
+#box1 #p1{
+    font-size: 1.5rem;
+    color: rgb(90, 90, 90);
+}
+
+#p2{
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    line-height: 3rem;
+    /* width: 40rem; */
+    padding-top: .5rem;
+    /* background-color: green; */
+}
+
+#p2 span{
+    color: blueviolet;
+}
+
+#p3{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 0.5rem;
+}
+
+
+
 /* Mobile Devices (up to 600px) */
 @media (max-width: 600px) {
     .menu-icon {
@@ -69,6 +113,22 @@ nav a{
 
     nav a {
         margin: 1rem 0;
+    }
+
+    #box1 #p1{
+        font-size: 1rem;
+        color: rgb(206, 206, 206);
+    }
+
+    #p2{
+        font-size: 1.5rem;
+        line-height: normal;
+    }
+    #p3{
+        font-size: 1rem;
+        color: blue;
+        font-weight: 600;
+        padding-top: 0.5rem;
     }
 }
 
@@ -96,6 +156,15 @@ nav a{
     nav a {
         margin: 1rem 0;
     }
+    #box1 #p1{
+        font-size: 1.5rem;
+        color: rgb(90, 90, 90);
+    }
+    #p3{
+        font-size: 1.8rem;
+        font-weight: 600;
+        padding-top: 0.5rem;
+    }
 }
 
 /* Small Laptops (769px to 1024px) */
@@ -107,6 +176,25 @@ nav a{
     nav a {
         margin: 0 0.75rem;
     }
+    #box1 #p1{
+        font-size: 2rem;
+        color: rgb(90, 90, 90);
+    }
+    #p3{
+        font-size: 2rem;
+        font-weight: 600;
+        padding-top: 0.5rem;
+    }
+}
+
+/* tablet */
+@media (max-width:768px){
+    #p3{
+        color: rgb(0, 0, 0);
+        font-size: 2rem;
+        font-weight: 600;
+        padding-top: 0.5rem;
+    }
 }
 
 /* Desktops (1025px to 1440px) */
@@ -117,6 +205,11 @@ nav a{
 
     nav a {
         margin: 0 1rem;
+    }
+    #p3{
+        font-size: 4rem;
+        font-weight: 600;
+        padding-top: 0.5rem;
     }
 }
 
